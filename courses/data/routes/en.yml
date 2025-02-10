@@ -61,3 +61,12 @@ placeholders:
               <li>Delete <code>/src/components/*</code></li>
             </ol>
           </div>
+    - componentName: CoursesComponent
+      fields:
+        heading: "Explore Our Courses"
+        description: |
+          Learn from the best instructors in the industry. Choose from a wide range of courses tailored for your career growth.
+        ctaLink:
+          href: "#"
+          text: "Browse All Courses >"
+          target: "_self"
