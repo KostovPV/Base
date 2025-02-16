@@ -3,6 +3,13 @@ fields:
 
 placeholders:
   jss-main:
+    - componentName: InfoComponent
+      fields:
+        teachers: 30
+        members: 30
+        courses: 30
+        countries: 30
+        backgroundImage: /img/infoComponentBackgroung.webp
     - componentName: CoursesComponent
       fields:
         heading: "Explore Our Courses"
@@ -19,61 +26,46 @@ placeholders:
             fields:
               title: "Photoshop CC 2017"
               description: "Learn advanced Photoshop techniques to enhance your design skills."
-              # image:
-              #   value:
-              #     src: /img/course1.webp
-              #     alt: "Photoshop Course"
+              image: /img/course1.webp
               authorName: "Derek Spafford"
-              # authorImage:
-              #   value:
-              #     src: /img/teacher1.webp
-              #     alt: "Instructor Derek Spafford"
+              authorImage: /img/teacher1.webp
               studentCount: 59
               likes: 19
               rating: 4.5
-
           - componentName: CourseCardComponent
             fields:
               title: "Illustrator CC 2017"
               description: "There are many variations of sages of Lorem Ipsum available, but the mrity have suffered alteration in some orm."
-              # image:
-              #   value:
-              #     src: /img/course1.webp
-              #     alt: "Web Development Course"
+              image: /img/course1.webp
               authorName: "Jane Doe"
-              # authorImage:
-              #   value:
-              #     src: /img/teacher1.webp
-              #     alt: "Instructor Jane Doe"
+              authorImage: /img/teacher1.webp
               studentCount: 120
               likes: 45
               rating: 5
-
           - componentName: CourseCardComponent
             fields:
               title: "React for Beginners"
               description: "Master the fundamentals of React and build dynamic web applications."
-              # image:
-              #   value:
-              #     src: /img/course1.webp
-              #     alt: "React Course"
+              image: /img/course1.webp
               authorName: "John Smith"
-              # authorImage:
-              #   value:
-              #     src: /img/teacher1.webp
-              #     alt: "Instructor John Smith"
+              authorImage: /img/teacher1.webp
               studentCount: 85
               likes: 30
               rating: 4.8
-    - componentName: InfoComponent
+    - componentName: AboutComponent
       fields:
-        teachers: 30
-        members: 30
-        courses: 30
-        countries: 30
-        backgroundImage: 
-          src: /img/infoComponentBackgroung.webp
-          alt: "Info Background"
+        heading: 'Provide Best <span>Education Services</span> For You'
+        description: |
+          Education plays a crucial role in shaping an individual's future and societal progress. It empowers people with knowledge, skills, and critical thinking that are necessary for personal and professional success.
+          <br/>
+          Access to quality education fosters equality, reduces poverty, and creates opportunities for growth. However, disparities in educational access and resources still persist, requiring ongoing efforts to bridge these gaps for a more inclusive and prosperous society.
+        ctaLink:
+          href: '#'
+          text: 'Learn More'
+          target: '_blank'
+        image: /media/img/aboutImage.webp
+        imageLeftAlignment: true
+        altText: 'An illustration of education services'
 
        
           
