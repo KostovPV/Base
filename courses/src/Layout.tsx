@@ -3,7 +3,7 @@ import Head from 'next/head';
 import { Placeholder, LayoutServiceData, Field, HTMLLink } from '@sitecore-jss/sitecore-jss-nextjs';
 import config from 'temp/config';
 import Scripts from 'src/Scripts';
-import Menu from 'components/MenuComponent';
+import MenuComponent from 'components/MenuComponent';
 
 const publicUrl = config.publicUrl;
 
@@ -33,8 +33,7 @@ const Layout = ({ layoutData, headLinks }: LayoutProps): JSX.Element => {
         ))}
       </Head>
 
-      <Menu fields={{ menuItems: fields.menuItems }} />
-    
+      {/* <MenuComponent fields={{ menuItems: fields.menuItems }} /> */}
       {route && <Placeholder name="jss-main" rendering={route} />}
     </>
   );

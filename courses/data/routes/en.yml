@@ -233,6 +233,315 @@ placeholders:
               url:
                 value: "/contact.html"
                 target: "_self"
+    - componentName: MobileMenuComponent
+      fields:
+        menuItems:
+          value:
+            - title:
+                value: "Home"
+              url:
+                value: "/index.html"
+                target: "_self"
+              children:
+                value:
+                  - title:
+                      value: "Home Version 1"
+                    url:
+                      value: "/index.html"
+                      target: "_self"
+                  - title:
+                      value: "Home Version 2"
+                    url:
+                      value: "/index-2.html"
+                      target: "_self"
+            - title:
+                value: "About"
+              url:
+                value: "/about.html"
+                target: "_self"
+            - title:
+                value: "Gallery"
+              url:
+                value: "/gallery.html"
+                target: "_self"
+              children:
+                value:
+                  - title:
+                      value: "Gallery"
+                    url:
+                      value: "/gallery.html"
+                      target: "_self"
+                  - title:
+                      value: "Gallery Filtaring"
+                    url:
+                      value: "/gallery-2.html"
+                      target: "_self"
+                  - title:
+                      value: "Gallery Four Column"
+                    url:
+                      value: "/gallery-four-column.html"
+                      target: "_self"
+            - title:
+                value: "Courses"
+              url:
+                value: "/course.html"
+                target: "_self"
+              children:
+                value:
+                  - title:
+                      value: "Courses Details"
+                    url:
+                      value: "/courses-details.html"
+                      target: "_self"
+            - title:
+                value: "Features"
+              url:
+                value: "#"
+                target: "_self"
+              children:
+                value:
+                  - title:
+                      value: "Blog"
+                    url:
+                      value: "#"
+                      target: "_self"
+                    children:
+                      value:
+                        - title:
+                            value: "Blog"
+                          url:
+                            value: "/blog.html"
+                            target: "_self"
+                        - title:
+                            value: "Blog Details"
+                          url:
+                            value: "/blog-details.html"
+                            target: "_self"
+                        - title:
+                            value: "Blog Left Sidebar"
+                          url:
+                            value: "/blog-left-sidebar.html"
+                            target: "_self"
+                        - title:
+                            value: "Blog No Sidebar"
+                          url:
+                            value: "/blog-no-sidebar.html"
+                            target: "_self"
+                  - title:
+                      value: "Shop"
+                    url:
+                      value: "#"
+                      target: "_self"
+                    children:
+                      value:
+                        - title:
+                            value: "Shop"
+                          url:
+                            value: "/shop.html"
+                            target: "_self"
+                        - title:
+                            value: "Single Product"
+                          url:
+                            value: "/single-product.html"
+                            target: "_self"
+                        - title:
+                            value: "Shopping Cart"
+                          url:
+                            value: "/cart.html"
+                            target: "_self"
+                        - title:
+                            value: "Wishlist"
+                          url:
+                            value: "/wishlist.html"
+                            target: "_self"
+                        - title:
+                            value: "Checkout"
+                          url:
+                            value: "/checkout.html"
+                            target: "_self"
+                        - title:
+                            value: "Login - Register"
+                          url:
+                            value: "/login-register.html"
+                            target: "_self"
+            - title:
+                value: "Pages"
+              url:
+                value: "/index.html"
+                target: "_self"
+              children:
+                value:
+                  - title:
+                      value: "Team Details"
+                    url:
+                      value: "/team-details.html"
+                      target: "_self"
+                  - title:
+                      value: "Courses Page"
+                    url:
+                      value: "/course.html"
+                      target: "_self"
+                  - title:
+                      value: "Course Details Page"
+                    url:
+                      value: "/courses-details.html"
+                      target: "_self"
+                  - title:
+                      value: "Event Page"
+                    url:
+                      value: "/event.html"
+                      target: "_self"
+                  - title:
+                      value: "Event Details Page"
+                    url:
+                      value: "/event-details.html"
+                      target: "_self"
+                  - title:
+                      value: "Blog"
+                    url:
+                      value: "/blog.html"
+                      target: "_self"
+                  - title:
+                      value: "Blog Details Page"
+                    url:
+                      value: "/blog-details.html"
+                      target: "_self"
+                  - title:
+                      value: "Blog Left Sidebar"
+                    url:
+                      value: "/blog-left-sidebar.html"
+                      target: "_self"
+                  - title:
+                      value: "Blog No Sidebar"
+                    url:
+                      value: "/blog-no-sidebar.html"
+                      target: "_self"
+                  - title:
+                      value: "Wishlist Page"
+                    url:
+                      value: "/wishlist.html"
+                      target: "_self"
+                  - title:
+                      value: "Checkout Page"
+                    url:
+                      value: "/checkout.html"
+                      target: "_self"
+                  - title:
+                      value: "Shopping Cart Page"
+                    url:
+                      value: "/cart.html"
+                      target: "_self"
+                  - title:
+                      value: "Login Page"
+                    url:
+                      value: "/login-register.html"
+                      target: "_self"
+                  - title:
+                      value: "Contact"
+                    url:
+                      value: "/contact.html"
+                      target: "_self"
+                  - title:
+                      value: "404 Error"
+                    url:
+                      value: "/404.html"
+                      target: "_self"
+            - title:
+                value: "Shop"
+              url:
+                value: "/shop.html"
+                target: "_self"
+              children:
+                value:
+                  - title:
+                      value: "Single Product Page"
+                    url:
+                      value: "/single-product.html"
+                      target: "_self"
+            - title:
+                value: "Contact"
+              url:
+                value: "/contact.html"
+                target: "_self"
+    - componentName: InfoComponent
+      fields:
+        teachers:
+          value: 30
+        members:
+          value: 30
+        courses:
+          value: 30
+        countries:
+          value: 30
+        backgroundImage:
+          value: "/img/infoComponentBackgroung.webp"
+    - componentName: CoursesComponent
+      fields:
+        heading:
+          value: "Explore Our Courses"
+        description:
+          value: "Learn from the best instructors in the industry. Choose from a wide range of courses tailored for your career growth."
+        ctaLink:
+          value:
+            href: "/courses"
+            text: "View All Courses"
+            target: "_self"
+      placeholders:
+        course-list:
+          - componentName: CourseCardComponent
+            fields:
+              title:
+                value: "Photoshop CC 2017"
+              description:
+                value: "Learn advanced Photoshop techniques to enhance your design skills."
+              image:
+                value: "/img/course1.webp"
+              authorName:
+                value: "Derek Spafford"
+              authorImage:
+                value: "/img/teacher1.webp"
+              studentCount:
+                value: 59
+              likes:
+                value: 19
+              rating:
+                value: 4.5
+          - componentName: CourseCardComponent
+            fields:
+              title:
+                value: "Illustrator CC 2017"
+              description:
+                value: "There are many variations of Lorem Ipsum available, but the mrity have suffered alteration in some orm."
+              image:
+                value: "/img/course1.webp"
+              authorName:
+                value: "Jane Doe"
+              authorImage:
+                value: "/img/teacher1.webp"
+              studentCount:
+                value: 120
+              likes:
+                value: 45
+              rating:
+                value: 5
+          - componentName: CourseCardComponent
+            fields:
+              title:
+                value: "React for Beginners"
+              description:
+                value: "Master the fundamentals of React and build dynamic web applications."
+              image:
+                value: "/img/course1.webp"
+              authorName:
+                value: "John Smith"
+              authorImage:
+                value: "/img/teacher1.webp"
+              studentCount:
+                value: 85
+              likes:
+                value: 30
+              rating:
+                value: 4.8
     - componentName: InfoComponent
       fields:
         teachers:

@@ -1,0 +1,119 @@
+/* MobileMenuComponent.module.scss */
+
+.mobileMenuArea {
+  background: #2d3e50;
+  padding: 10px 0;
+  box-sizing: border-box;
+}
+
+.container {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 0 5px;
+}
+
+.meanContainer {
+  display: flex;
+  flex-direction: column;
+}
+
+.meanBar {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  position: relative;
+}
+
+.meanmenuReveal {
+  display: inline-block;
+  cursor: pointer;
+  text-align: center;
+  font-size: 18px;
+  padding: 10px;
+  background: #fff;
+  color: #333;
+  text-decoration: none;
+}
+
+.meanmenuReveal span {
+  display: block;
+  width: 25px;
+  height: 3px;
+  background: #333;
+  margin: 4px auto;
+}
+
+.meanNav {
+  width: 100%;
+  background: #fff;
+  padding: 10px 0;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.mobileMenu {
+  width: 100%;
+  background: #fff;
+}
+
+.meanPush {
+  height: 0;
+}
+
+/* Dropdown nav styling */
+.dropdownNav {
+  background: #fff;
+  padding: 10px;
+}
+
+/* Mobile menu list styling */
+.nav,
+.dropdownNav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.menuItem {
+  position: relative;
+  border-bottom: 1px solid #eee;
+}
+
+.menuLink {
+  display: block;
+  padding: 10px;
+  text-decoration: none;
+  color: #333;
+}
+
+.subMenu {
+  display: none;
+  list-style: none;
+  padding-left: 15px;
+  background: #f8f9fa;
+}
+
+/* Show sub-menu on hover if desired (or toggle via JS) */
+.menuItem:hover > .subMenu {
+  display: block;
+}
+
+/* Expand button styling for nested menus */
+.meanExpand {
+  display: inline-block;
+  // float: right;
+  font-size: 18px;
+  padding: 10px;
+  text-decoration: none;
+  color: #333;
+}
+
+/* Responsive adjustments (if needed) */
+@media (max-width: 767px) {
+  .meanContainer {
+    flex-direction: column;
+  }
+}
