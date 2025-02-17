@@ -2,11 +2,9 @@ import React from 'react';
 import Head from 'next/head';
 import { Placeholder, LayoutServiceData, Field, HTMLLink } from '@sitecore-jss/sitecore-jss-nextjs';
 import config from 'temp/config';
-import Navigation from 'src/Navigation';
 import Scripts from 'src/Scripts';
+import Menu from 'components/MenuComponent';
 
-// Prefix public assets with a public URL to enable compatibility with Sitecore editors.
-// If you're not supporting Sitecore editors, you can remove this.
 const publicUrl = config.publicUrl;
 
 interface LayoutProps {
@@ -17,11 +15,11 @@ interface LayoutProps {
 interface RouteFields {
   [key: string]: unknown;
   pageTitle: Field;
+  menuItems?: any; // Ideally type this to match your menu item structure
 }
 
 const Layout = ({ layoutData, headLinks }: LayoutProps): JSX.Element => {
   const { route } = layoutData.sitecore;
-
   const fields = route?.fields as RouteFields;
 
   return (
@@ -35,9 +33,9 @@ const Layout = ({ layoutData, headLinks }: LayoutProps): JSX.Element => {
         ))}
       </Head>
 
-      <Navigation />
-      {/* root placeholder for the app, which we add components to using route data */}
-     {route && <Placeholder name="jss-main" rendering={route} />}
+      <Menu fields={{ menuItems: fields.menuItems }} />
+    
+      {route && <Placeholder name="jss-main" rendering={route} />}
     </>
   );
 };

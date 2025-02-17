@@ -1,0 +1,95 @@
+.navBar {
+  font-family: 'Poppins', sans-serif;
+  display: flex;
+  margin: 0;
+  padding: 0;
+  height: 95px;
+  align-items: center;
+  justify-content: space-around;
+ 
+}
+.logoSection {
+  flex: 0 0 25%;
+  max-width: 23%;
+  display: flex;
+  align-items: center;
+  margin-left: 0; 
+}
+
+.menuIcon {
+  margin-bottom: 10px;
+
+  img {
+    max-width: 50px;
+    height: auto;
+    display: block;
+  }
+}
+
+/* The main list of navigation items */
+.navList {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+/* Top-level menu items */
+.menuItem {
+  position: relative;
+  margin: 0 10px;
+}
+
+/* Top-level links */
+.menuLink {
+  text-decoration: none;
+  color: #333;
+  padding: 5px 10px;
+  display: inline-block;
+}
+
+/* Submenu styling */
+.subMenu {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background: #fff;
+  padding: 10px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+  list-style: none;
+  white-space: nowrap;
+  z-index: 100;
+}
+
+/* Show submenu when hovering over the parent menu item */
+.menuItem:hover>.subMenu {
+  display: block;
+}
+
+/* Inside submenu, if any (for multi-level nesting) */
+.insideMenu {
+  display: none;
+  position: absolute;
+  top: 0;
+  left: 100%;
+  background: #fff;
+  padding: 10px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+  list-style: none;
+  white-space: nowrap;
+  z-index: 101;
+  margin-top: -1px;
+  /* Overlap slightly */
+}
+
+/* Show inside menu on hover */
+.subMenu li:hover>.insideMenu {
+  display: block;
+}
+
+/* Hover state for all links */
+.menuLink:hover,
+.insideMenu a:hover {
+  color: orange;
+}
